@@ -1,20 +1,29 @@
-# Guestbook dApp
-
-## 📌 Project Description
-
+Guestbook dApp
+📌 Project Description
 The Guestbook dApp is a simple smart contract built using the Clarity language on the Stacks blockchain. It allows users to leave a short message (like signing a digital guestbook) and retrieve it later. Each user's message is uniquely tied to their wallet address.
 
-## 🌍 Project Vision
-
+🌍 Project Vision
 The goal of this dApp is to demonstrate how users can interact with decentralized applications on the Stacks blockchain. It focuses on simplicity, clarity, and utility — offering a foundation for more advanced social or messaging features in Web3.
 
-## 🚀 Future Scope
+💻 Tech Stack
+Smart Contracts: Clarity (on Stacks blockchain)
 
-- Add timestamps for messages  
-- Enable editing or deleting messages  
-- Create a front-end using React + Hiro Wallet  
-- Public feed showing all user messages  
-- Limit rate of messages per user to avoid spam
+Frontend: React
+
+Styling: Tailwind CSS
+
+Wallet Integration: Leather Wallet (formerly Hiro Wallet)
+
+🚀 Future Scope
+Add timestamps for messages
+
+Enable editing or deleting messages
+
+Create a front-end using React + Leather Wallet ✅
+
+Public feed showing all user messages
+
+Limit rate of messages per user to avoid spam
 
 ## 📝 Contract Address;-
 ST14GBGN745D9TY68Q99DJEQJNGTV8BP9YX4FCH1N.guestbook
