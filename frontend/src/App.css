@@ -1,0 +1,203 @@
+/* Base Reset & Typography */
+body {
+  margin: 0;
+  font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #e6f0ff, #f9fbff);
+  color: #222;
+  transition: background 0.4s ease, color 0.4s ease;
+}
+
+.App {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 2rem;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Typography */
+h1, h2 {
+  margin-bottom: 1rem;
+  background: linear-gradient(to right, #4f46e5, #9333ea);
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: fadeIn 1s ease;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.3rem;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Cards */
+.card {
+  background: #ffffffdd;
+  border-radius: 12px;
+  padding: 1.7rem;
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.08);
+  margin-bottom: 1.5rem;
+  width: 100%;
+  animation: slideUp 0.5s ease;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.015);
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Inputs */
+textarea,
+input {
+  width: 100%;
+  padding: 0.9rem;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #cbd5e0;
+  border-radius: 10px;
+  background: #f0f0f3;
+  color: #333;
+  box-shadow: inset 3px 3px 6px #ccc, inset -3px -3px 6px #fff;
+  transition: all 0.3s ease;
+}
+
+textarea:focus,
+input:focus {
+  border-color: #6366f1;
+  outline: none;
+}
+
+/* Buttons */
+button {
+  background: linear-gradient(to right, #6366f1, #8b5cf6);
+  color: white;
+  border: none;
+  padding: 0.8rem 1.4rem;
+  font-size: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background: #4f46e5;
+  transform: scale(1.03);
+}
+
+button:disabled {
+  background: #a5b4fc;
+  cursor: not-allowed;
+}
+
+/* Message Box */
+.message {
+  background: #eef2ff;
+  border-left: 4px solid #6366f1;
+  padding: 1rem;
+  border-radius: 10px;
+  margin-top: 1rem;
+  transition: background 0.3s ease;
+}
+
+/* Theme Toggle Button */
+.theme-toggle {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 999;
+  background-color: #ffffff;
+  color: #111;
+  padding: 0.6rem 1.1rem;
+  font-size: 1.05rem;
+  border: none;
+  border-radius: 999px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s, transform 0.2s ease;
+}
+
+.theme-toggle:hover {
+  transform: scale(1.07);
+  background: #e0e0e0;
+}
+
+/* Center Connect Button */
+.centered {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  text-align: center;
+}
+
+/* ---------------- Dark Mode ---------------- */
+body.dark {
+  background: linear-gradient(135deg, #0e0e1a, #1f1f33);
+  color: #f1f1f1;
+}
+
+body.dark .card {
+  background: #2a2a40;
+  color: #f9f9f9;
+}
+
+body.dark .message {
+  background: #34354a;
+  border-left-color: #60a5fa;
+}
+
+body.dark input,
+body.dark textarea {
+  background-color: #3c3d4f;
+  border-color: #5a5b7a;
+  color: #f1f1f1;
+  box-shadow: inset 3px 3px 6px #1a1a2e, inset -3px -3px 6px #2b2c3b;
+}
+
+body.dark button {
+  background: #4f6ef7;
+}
+
+body.dark button:hover {
+  background: #3752c8;
+}
+
+body.dark .theme-toggle {
+  background-color: #343a50;
+  color: #f1f1f1;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .App {
+    padding: 1.2rem;
+  }
+
+  button {
+    width: 100%;
+  }
+
+  .theme-toggle {
+    position: static;
+    display: block;
+    text-align: center;
+    margin: 1rem auto;
+  }
+}
