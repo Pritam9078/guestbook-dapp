@@ -1,27 +1,35 @@
-Guestbook dApp
-📌 Project Description
-The Guestbook dApp is a simple smart contract built using the Clarity language on the Stacks blockchain. It allows users to leave a short message (like signing a digital guestbook) and retrieve it later. Each user's message is uniquely tied to their wallet address.
+# Guestbook dApp
 
-🌍 Project Vision
-The goal of this dApp is to demonstrate how users can interact with decentralized applications on the Stacks blockchain. It focuses on simplicity, clarity, and utility — offering a foundation for more advanced social or messaging features in Web3.
+## 📌 Project Description
 
-💻 Tech Stack
-Smart Contracts: Clarity (on Stacks blockchain)
+The Guestbook dApp is a decentralized application built using the **Clarity** smart contract language on the **Stacks blockchain**. It allows users to leave a short message — similar to signing a digital guestbook — which is then tied to their wallet address and stored immutably on-chain.
 
-Frontend: React
+## 🌍 Project Vision
 
-Styling: Tailwind CSS
+This project demonstrates how users can interact with decentralized applications on Stacks. The focus is on simplicity, clarity, and utility, making it a great foundational example for more advanced Web3 social or messaging dApps.
 
-Wallet Integration: Leather Wallet (formerly Hiro Wallet)
+## 💻 Tech Stack
 
-🚀 Future Scope
-Add timestamps for messages
+- **Smart Contracts:** Clarity (Stacks blockchain)
+- **Frontend:** React
+- **Styling:** Tailwind CSS
+- **Wallet Integration:** [Leather Wallet](https://leather.io) (formerly Hiro Wallet)
+- **Development Tooling:** Clarinet, TypeScript
 
-Enable editing or deleting messages
+## 🚀 Features
 
-Create a front-end using React + Leather Wallet ✅
+- Submit a message tied to your wallet address
+- View your message on-chain
+- Responsive React + Tailwind frontend
+- Seamless connection with Leather Wallet
 
-Public feed showing all user messages
+## 🔮 Future Scope
+
+- Add timestamps for each message  
+- Enable editing or deleting messages  
+- Public feed displaying all user messages  
+- Rate limiting to prevent spam  
+- Enhanced UI/UX with animations and themes  
 
 Limit rate of messages per user to avoid spam
 
